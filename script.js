@@ -113,7 +113,7 @@ console.log(friends.indexOf('Cady'));
 console.log(friends.includes('Cady'));*/
 
 //Objects
-const kez = {
+/*const kez = {
     firstName: 'Kezia',
     lastName: 'Idiot',
     birthYear: 1998,
@@ -175,4 +175,77 @@ if (kez.hasDriversLicense) {
 console.log(`${kez.firstName} is a ${kez.age}-year old ${kez.job} and she has ${kez.driversLicenseStr} driver's license`)
 
 //or
-console.log(kez.getSummary());
+console.log(kez.getSummary());*/
+
+//For loop - keeps running while condition is TRUE
+/*for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetion: ${rep}`)
+}*/
+
+/*const kezi = ['Kezia', 'Stephen', 2025 - 1998, 'child of God', ['Mutty', 'Nutty', 'Putty'], true];
+const types = [];
+for (let i = 0; i < kezi.length; i++) {
+    console.log(kezi[i]);
+    types[i] = typeof kezi[i] //types.push(typeof kezi[i])
+}
+console.log(types);
+
+const years = [1991, 1995, 1998, 2003];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages[i] = 2025 - years[i];//ages.push(2025 - years[i])
+}
+console.log(ages)
+
+//continue and break
+console.log("---Only strings with continue---")
+for (let i = 0; i < kezi.length; i++) {
+    if (typeof kezi[i] !== 'string') {
+        continue;
+    }
+    console.log(kezi[i], typeof kezi[i]);
+    //types.push(typeof kezi[i])
+}
+
+console.log("---Break with number---")
+for (let i = 0; i < kezi.length; i++) {
+    if (typeof kezi[i] == 'number') {
+        break;
+    }
+    console.log(kezi[i], typeof kezi[i]);
+    //types.push(typeof kezi[i])
+}*/
+
+//Looping backwards
+const kezia = [
+    'Kezia',
+    'Stephen',
+    2025 - 1998,
+    'child of God',
+    ['Mutty', 'Nutty', 'Putty']
+];
+for (let i = kezia.length - 1; i >= 0; i--) {
+    console.log(kezia[i])
+}
+
+//While loop
+/*for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetion: ${rep}`)
+}*/
+
+/*let rep = 1;
+while (rep <= 10) {
+    console.log(`Lifting weights repetion: ${rep}`);
+    rep++;
+}*/
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1
+    if (dice == 6) {
+        console.log("Oopsie doopsie done")
+    }
+}
